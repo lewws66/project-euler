@@ -1,0 +1,11 @@
+# https://projecteuler.net/problem=1
+num = 1000  # the number we want to find 2 factors of, a and b
+a   = 3     # factor 1
+b   = 5     # factor 2
+sum =  0    # sum of all the factors 
+for x in range(num):
+  if x%a==0 or x%b==0 or x%(a*b)==0:
+     sum +=x    
+     # print(x)      # for checking
+     # print(sum)    # for checking
+print(sum)
